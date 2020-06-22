@@ -1,0 +1,10 @@
+version:"3"
+services:
+    music:
+       image:openjdk
+       ports:
+        - "3200:8080"
+
+       volumes:
+        - $PWD/target:/opt
+      command: java -jar /opt/java -jar target/soft2group5-0.0.1-SNAPSHOT.jar
